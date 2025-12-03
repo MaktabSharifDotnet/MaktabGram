@@ -6,6 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MaktabGram.Presentation.MVC.Controllers
 {
+    public class UsersController(IUserApplicationService userApplicationService)  : Controller
+    {
+        //private readonly IUserApplicationService userApplicationService;
+        //public UsersController()
+        //{
+        //    userApplicationService = new UserApplicationService();
+        //}
+
     public class UsersController(IUserApplicationService userApplicationService) : Controller
     {
         [HttpGet]
